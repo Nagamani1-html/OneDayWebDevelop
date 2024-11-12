@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>education</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div>
+        <nav class="navbar navbar-expand-lg navbar-light bg-nav ">
+            <a class="navbar-brand" href="#"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkpKDRxHpSqgWgKLIqL4f0buhZ1gKRDJ622A&s" class="logo"/></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+              <div class="navbar-nav ml-auto">
+                <a class="nav-link text-white" href="#sectionHome">Home</a>
+                <a class="nav-link text-white" href="#sectionEventsPage">Events</a>
+                <a class="nav-link text-white" href="#sectionDonatePage">Donate</a>
+                <a class="nav-link text-white" href="#sectionVolunteerPage">Volunteer</a>
+                <a class="nav-link text-white bg-primary" href="#sectionSignUp">Sign Up</a>
+              </div>
+            </div>
+          </nav>
+    </div>
+    <div id="sectionHome" class="m-2 ">
+      <div class="bg-home">
+        <h1 class="text-white text-center home-heading">Welcome! to Global Food Banking Network :)</h1>
+        <p class="caption text-center">The mission is to ensure that surplus food reaches those in need, ultimately creating a more sustainable food system.</p>
+        <div class="d-flex felx-column justify-content-center">
+         <a href="" class="know-more-link" onclick="display('sectionEventsPage')">Know More
+          <svg width="16px" height="16px" viewBox="0 0 16 16" class="bi bi-arrow-right" fill="#73e6da" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+        </svg>
+         </a>
+       </div>
+    </div>
+  </div>
+  <div id="sectionEventsPage" class="m-2 events-card">
+      <div class="bg-events ">
+        <h1 class="heading">Events</h1>
+        <p class="descrpition ">Join Us!</p>
+      </div>
+        <h1 class="events-heading">Upcoming Events</h1>
+        <div class="p-2">
+          <p class="event-date">11-22 November, 2023</p>
+          <p class="event-info">Food banking events can be organized by local food banks, schools, corporations, or community groups and often aim to engage the public, raise awareness, and encourage ongoing support for food assistance programs. These events not only provide essential resources to those facing food insecurity but also foster a sense of community and collective action toward a common goal.</p>
+          <p class="event-place">Ballari, Karnataka</p>
+        </div>
+  </div>
+  <div id="sectionDonatePage" class="donation-card">
+    <h1 class="donate-heading">Make a Donation</h1>
+    <div class="d-flex flex-row">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCkTmnXOBzJFHs93auslH1cw3nIZfUeWphJA&s"/>
+      <div class="d-flex flex-column">
+        <p class="donation-caption">Food banks to distribute nutritious meals to individuals and families in need, ensuring that surplus food is effectively utilized and reducing food waste. </p>
+        <div class="d-felx flex-column justify-content-center">
+          <button id="#donateModal"  class="btn btn-info custom-button" data-toggle="modal">Donate Now</button>
+        </div>
+          <!--modal-->
+          <div class="modal"  id="donateModal" tabindex="-1">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title">Donate</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <p>By donating, individuals and organizations play a vital role in supporting local communities and promoting food security.</p>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>
+  </div>
+  </div>
+  <div id="sectionVolunteerPage" class="volunteer-card">
+    <h1 class="volunteer-heading">Become a Volunteer</h1>
+    <div id="carouselExampleIndicators" class="carousel slide p-3" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="https://thumbs.dreamstime.com/b/team-volunteers-collecting-food-donations-indoors-154734860.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="https://st4.depositphotos.com/16122460/30946/i/450/depositphotos_309461852-stock-photo-team-of-volunteers-collecting-food.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="https://thumbs.dreamstime.com/b/volunteers-serving-food-to-poor-people-indoors-156216839.jpg" class="d-block w-100" alt="...">
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+    <div class="bg-signUp" id="sectionSignUp">
+      <h1 class="sign-Up text-center">Sign Up to become Volunteer</h1>
+      <div class="d-flex flex-column">
+        <form action="#" method="POST">
+          <div>
+            <label for="username">Username</label>
+            <input type="text" id="username" name="username" required>
+        </div>
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required>
+
+          <label for="password">Password</label>
+          <input type="password" id="password" name="password" required>
+          <div class="d-felx flex-row justify-content-center">
+            <button type="submit" class="custom-button-sign-up btn-info">Create Account</button>
+        </div>
+        </form>
+       </div> 
+    </div>
+  </div>
+
+  <div class="footer-card ">
+    <div class="footer-content">
+      <h2>Follow Us</h2>
+      <div class="social-links">
+        <a href="https://facebook.com" target="_blank">Facebook</a> |
+        <a href="https://twitter.com" target="_blank">Twitter</a> |
+        <a href="https://instagram.com" target="_blank">Instagram</a>
+      </div>
+    </div>
+    <div class="footer-bottom d-flex flex-column justify-content-center">
+      <p>&copy; 2024 Food Bank. All Rights Reserved.</p>
+    </div>
+  </div>
+
+</body>
+</html>
